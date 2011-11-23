@@ -1,0 +1,11 @@
+		{% include "work/header.html" %}
+		<div class="col">
+			{% for work in works %}
+			<h3>{{ work.title }}</h3>
+			<div class="ft">
+				<p> </p>
+				<p><a href="/work/{{ work.id }}">Read More</a></p>
+			</div>
+			{% endfor %}
+		</div>
+		{% include "search/footer.html" %}

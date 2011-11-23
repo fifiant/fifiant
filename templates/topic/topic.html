@@ -1,0 +1,12 @@
+		{% extends "header.html" %}
+
+		<div class="col">
+			{% for topic in topics %}
+			<h3>{{ topic.title }}</h3>
+			<div class="ft">
+				<p> </p>
+				<p><a href="/topic/{{ topic.id }}">Read More</a></p>
+			</div>
+			{% endfor %}
+		</div>
+		{% extends "footer.html" %}

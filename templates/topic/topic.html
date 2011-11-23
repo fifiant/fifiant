@@ -1,5 +1,4 @@
-		{% extends "header.html" %}
-
+		{% include "topic/header.html" %}
 		<div class="col">
 			{% for topic in topics %}
 			<h3>{{ topic.title }}</h3>
@@ -9,4 +8,4 @@
 			</div>
 			{% endfor %}
 		</div>
-		{% extends "footer.html" %}
+		{% include "topic/footer.html" %}

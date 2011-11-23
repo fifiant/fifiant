@@ -7,8 +7,8 @@ press_list_dict={
 'template_object_name': 'search',
 }
 urlpatterns = patterns('',
-	(r'^search/(?P<pid>\d+)/$', 'fifiant.search.views.detail_search'),
-	(r'search/$', 'fifiant.search.views.searchs'),
+	(r'^(?P<pid>\d+)/$', 'fifiant.search.views.detail_search'),
+	(r'^$', 'fifiant.search.views.searchs'),
 	#(r'list/$','django.views.generic.list_detail.object_list',press_list_dict),
 	#(r'$', 'django.views.generic.simple.redirect_to',{'url': '/press/list/'})
 )

@@ -25,5 +25,5 @@ urlpatterns = patterns('',
     # work management
     (r'^work/', include('fifiant.work.urls')),
     # main management
-    #url(r'^$', 'fifiant.views.home', name='home'),
+    url(r'^$', include('fifiant.main.urls')),
 )

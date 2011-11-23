@@ -18,5 +18,5 @@ def detail_topic(request, pid):
 def topics(request):
 	pl = get_list_or_404(Topic)
 	t = loader.get_template('topic/topic.html')
-	c = Context({'press_list': pl})
+	c = Context({'topics': pl})
 	return HttpResponse(t.render(c))

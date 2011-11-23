@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="Fawaz Fernand PARAISO" content="fifiant Cloud computing CEP Complex Event processing Multi-tenant Distributed Complex Event processing Engine Interoperability" />
+	<meta name="robots" content="index,follow" />
+	<link rel="stylesheet" href="/site_media/css/main.css" type="text/css" />
+	<title>Yes we CLOUD !!!</title>
+</head>
+<body>
+	<div id="content">
+		<div id="pitch">
+			<ul id="menu">
+				<li><a href="http://chercheurs.lille.inria.fr/~paraiso">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+			<h1><span>Fawaz F.<br />PARAISO</span><br />PhD Student</h1>
+			<p><b>@Mail : fawaz dot paraiso alt inria dot fr</b><br>Tél: 0033 3 59 57 78 84<br> <a href="http://adam.lille.inria.fr" title="ADAM TEAM">ADAM TEAM</a><br>I was Software Engineer at INRIA, working with <br>the ADAM research team from the INRIA Lille <br>Nord Europe research center<br> I'm currently PhD. Student in the same TEAM.</p>
+		</div>
+		
+		<div class="x"></div>
+		
+		<div class="col">
+			<h3>Search</h3>
+			<div class="ft">
+				<p> </p>
+				<p><a href="/search/">Read More</a></p>
+			</div>
+		</div>
+		<div class="col">
+			<h3>Topics</h3>
+			<div class="ft">
+				<p> </p>
+				<p><a href="/topic/">Read More</a></p>
+			</div>
+		</div>
+		<div class="col last">
+			<h3>My work</h3>
+			<div class="ft">
+				<p> </p>
+				<p><a href="/work/">Read More</a></p>
+			</div>
+		</div>
+			
+		<div class="section">
+			<p>Publications </p>
+		</div>
+		
+		<div class="x"></div>
+			
+		<a id="slider"></a>
+		<div id="directory">
+			{% for paper in papers %}
+			<div class="fourth">
+				<h5><a href="#">{{ paper.title }}</a></h5>
+				<p>Coming soon.</p>
+			</div>
+			{% endfor %}
+		</div>
+			
+		<div class="line"></div>
+			
+		<div class="col">
+			<h4>Distributed Complex Event Procesing</h4>
+			<p class="date"><span>01</span><br />Mars</p>
+			<p class="news"> Complexe Event Processing Engine In distribruted Architecture; Complex Event Processing; Event Driven Architecture ; Integration of Event and Stream Processing; Distributed Rule and Transaction Processing; Active/Reactive Behavior in Distributed; Cloud Computing; Adaptation; Middleware; SOA; Service. </p>
+		</div>
+		<div class="col">
+			<h4>Cloud computing</h4>
+			<p class="date"><span>03</span><br />OCT</p>
+			<p class="news"> State of art.</p>
+		</div>
+			
+		<div id="updates">
+			<h5>Receive more information about my work</h5>
+			<form action="">
+				<p>
+					<label for="email">Enter your E-mail Address:</label>
+					<input type="text" class="textfield" name="email" id="email" />
+					<input type="submit" class="submit" name="submit" value="Submit" />
+				</p>
+			</form>
+		</div>
+			
+		<div id="footer">
+			<p>&copy; 2011 &middot; - <a href="http://chercheurs.lille.inria.fr/~paraiso/" title="Research">Reseach</a></p>
+		</div>
+	</div>	
+</body>
+</html>
